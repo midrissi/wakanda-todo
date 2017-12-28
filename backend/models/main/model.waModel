@@ -1,0 +1,64 @@
+{
+	"toJSON": true,
+	"extraProperties": {
+		"version": "2",
+		"classes": {
+			"Todo": {
+				"panelColor": "#D88CFF",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 25,
+						"Y": 20
+					}
+				}
+			},
+			"Todo": {
+				"panelColor": "#7F7F7F",
+				"panel": {
+					"pathVisible": true,
+					"isOpen": "true",
+					"position": {
+						"X": 255,
+						"Y": 20
+					}
+				}
+			}
+		}
+	},
+	"dataClasses": [
+		{
+			"name": "Todo",
+			"className": "Todo",
+			"collectionName": "Todos",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"matchColumn": "ID, index, ID",
+					"scope": "public",
+					"unique": true,
+					"autogenerate": true,
+					"type": "uuid",
+					"primKey": true
+				},
+				{
+					"name": "description",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "done",
+					"kind": "storage",
+					"scope": "public",
+					"type": "bool"
+				}
+			],
+			"primKey": "index"
+		}
+	],
+	"type": []
+}
